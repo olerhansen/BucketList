@@ -1,22 +1,189 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BucketList</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #0d1117;
+            color: white;
+            padding: 18px 30px;
+        }
+
+        nav {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #0969da;
+        }
+
+        .intro {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 11px 18px;
+            background: #0969da;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .button:hover {
+            background: #0756b3;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 25px;
+            text-align: center;
+            background: #0d1117;
+            color: #aaa;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .menu {
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
 <body>
 
-<h1>Velkommen!</h1>
-<p>Denne nettsiden er publisert med GitHub Pages.</p>
+<header>
+    <nav>
+        <div class="logo">BucketList</div>
 
-<a href="Privacy.no.html">
-    <button>Personvern (Norsk)</button>
-</a>
+        <div class="menu">
+            <a href="index.html">Hjem</a>
+            <a href="Privacy.no.html">Personvern</a>
+            <a href="Privacy.en.html">Privacy</a>
+            <a href="Terms.no.html">Vilkår</a>
+            <a href="Terms.en.html">Terms</a>
+        </div>
+    </nav>
+</header>
 
-<a href="Privacy.en.html">
-    <button>Privacy (English)</button>
-</a>
+<main>
+    <h1>Velkommen til BucketList</h1>
 
-<a href="Terms.no.html">
-    <button>Vilkår (Norsk)</button>
-</a>
+    <p class="intro">
+        Her finner du informasjon om personvern og bruksvilkår for BucketList.
+    </p>
 
-<a href="Terms.en.html">
-    <button>Terms of Service (English)</button>
-</a>
+    <section class="cards">
+
+        <div class="card">
+            <h2>Norsk</h2>
+            <p>Les personvernerklæring og bruksvilkår på norsk.</p>
+
+            <a class="button" href="Privacy.no.html">
+                Personvern
+            </a>
+
+            <a class="button" href="Terms.no.html">
+                Vilkår
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>English</h2>
+            <p>Read the privacy policy and terms of service in English.</p>
+
+            <a class="button" href="Privacy.en.html">
+                Privacy
+            </a>
+
+            <a class="button" href="Terms.en.html">
+                Terms
+            </a>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    © 2026 BucketList
+</footer>
 
 </body>
+</html>
