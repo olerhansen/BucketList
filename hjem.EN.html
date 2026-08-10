@@ -1,163 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="no">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="UTF-8">
+<header>
+    <nav>
+        <div class="logo">BucketList</div>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
+        <div class="language-switcher">
+            <a href="index.html">🇳🇴 Norsk</a>
+            <span>|</span>
+            <a href="hjem.EN.html">🇬🇧 English</a>
+        </div>
+    </nav>
+</header>
 
-    <title>BucketList</title>
+<style>
 
-    <style>
+*{
+    box-sizing:border-box;
+}
 
-        * {
-            box-sizing: border-box;
-        }
+body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:#f5f7fa;
+    color:#222;
+    line-height:1.6;
+}
 
-        body {
-            margin: 0;
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-            background: #f5f7fa;
-            color: #222;
-            line-height: 1.6;
-        }
+header{
+    background:#111827;
+    color:white;
+    padding:18px;
+}
 
-        header {
-            background: #111827;
-            color: white;
-            padding: 18px;
-        }
+header h2{
+    margin:0;
+    text-align:center;
+}
 
-        nav {
-            max-width: 900px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+main{
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
+}
 
-        .logo {
-            font-weight: bold;
-        }
+.hero{
+    text-align:center;
+    margin-bottom:70px;
+}
 
-        .language-switcher a {
-            color: white;
-            text-decoration: none;
-        }
+.hero h1{
+    font-size:58px;
+    color:#0A66E8;
+    margin-bottom:20px;
+}
 
-        .language-switcher a:hover {
-            text-decoration: underline;
-        }
+.tagline{
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:25px;
+}
 
-        main {
-            max-width: 900px;
-            margin: auto;
-            padding: 60px 20px;
-        }
+.description{
+    max-width:700px;
+    margin:auto;
+    color:#555;
+    font-size:20px;
+}
 
-        .hero {
-            text-align: center;
-            margin-bottom: 72px;
-        }
+section{
+    margin-top:60px;
+}
 
-        .hero h1 {
-            font-size: 50px;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
+h2{
+    color:#0A66E8;
+}
 
-        .hero h1 span {
-            color: #0A66E8;
-        }
+ul{
+    max-width:600px;
+    margin:auto;
+    text-align:left;
+    font-size:18px;
+}
 
-        .tagline {
-            font-size: 22px;
-            color: #555;
-        }
+li{
+    margin:10px 0;
+}
 
-        .description {
-            max-width: 650px;
-            margin: 30px auto 0;
-            color: #555;
-        }
+.links{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    margin-top:60px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
 
-        section {
-            margin-top: 60px;
-        }
+.links ul{
+    list-style:none;
+    padding:0;
+}
 
-        section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+.links li{
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+}
 
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 18px;
-            box-shadow:
-                0 5px 20px rgba(0, 0, 0, 0.08);
-        }
+.links li:last-child{
+    border:none;
+}
 
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+.links a{
+    color:#0A66E8;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-        li {
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        }
+.links a:hover{
+    text-decoration:underline;
+}
 
-        li:last-child {
-            border-bottom: none;
-        }
+.download{
+    text-align:center;
+    margin-top:70px;
+}
 
-        a {
-            color: #0A66E8;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.store{
+    display:inline-block;
+    margin-top:20px;
+    padding:16px 28px;
+    background:#000;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-size:18px;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+.store:hover{
+    background:#333;
+}
 
-        .download {
-            text-align: center;
-        }
+footer{
+    margin-top:80px;
+    padding:30px;
+    text-align:center;
+    background:#111827;
+    color:#aaa;
+}
 
-        .appstore {
-            display: inline-block;
-            background: #000;
-            color: white;
-            padding: 14px 24px;
-            border-radius: 10px;
-            text-decoration: none;
-        }
-
-        .appstore:hover {
-            text-decoration: none;
-        }
-
-        footer {
-            text-align: center;
-            color: #aaa;
-            padding: 40px 20px;
-        }
-
-    </style>
+</style>
 
 </head>
 
@@ -165,144 +158,127 @@
 
 <header>
 
-    <nav>
-
-        <div class="logo">
-            BucketList
-        </div>
-
-        <div class="language-switcher">
-            <a href="home.no.html">🇳🇴 Norsk</a>
-            <span>|</span>
-            <a href="hjem.EN.html">🇬🇧 English</a>
-        </div>
-
-    </nav>
+<h2>BucketList</h2>
 
 </header>
 
-
 <main>
 
-    <section class="hero">
+<div class="hero">
 
-        <h1>
-            Collect your dreams.<br>
-            Plan your <span>experiences.</span><br>
-            Make them happen.
-        </h1>
+<h1>BucketList</h1>
 
-        <p class="tagline">
-            Your personal Bucket List.
-        </p>
+<div class="tagline">
+Collect your dreams.<br>
+Plan your experiences.<br>
+Live them.
+</div>
 
-        <p class="description">
-            BucketList is a personal app that helps you collect
-            the experiences you dream about – from small everyday moments
-            to great adventures around the world.
-            <br><br>
-            Plan, organize and follow your journey toward
-            turning your dreams into reality.
-        </p>
+<p class="description">
 
-    </section>
+BucketList is a personal app that helps you collect the experiences you dream of – from small everyday moments to big adventures around the world.
 
+Plan, organize and follow your journey toward making your dreams a reality.
 
-    <section>
-
-      <h1>BucketList</h1>
-
-<h2>
-    Collect your dreams.<br>
-    Plan your experiences.<br>
-    Live them.
-</h2>
-
-<p>
-    BucketList is a personal app that helps you collect the experiences
-    you dream of – from small everyday moments to big adventures around the world.
-    <br>
-    Plan, organize and follow your journey toward making your dreams a reality.
 </p>
 
-
-<h3>✨ Features</h3>
-
-<ul>
-    <li>Create your own Bucket List</li>
-    <li>Organize with categories</li>
-    <li>Favorites and completed experiences</li>
-    <li>Map view</li>
-    <li>Apple Maps integration</li>
-    <li>Statistics</li>
-    <li>Achievements</li>
-    <li>Sync between iPhone and iPad</li>
-</ul>
+</div>
 
 
-<h3>📱 Available for</h3>
+<section>
+
+<h2>✨ Features</h2>
 
 <ul>
-    <li>iPhone</li>
-    <li>iPad</li>
+
+<li>Create your own Bucket List</li>  <li>Organize with categories</li>  <li>Favorites and completed experiences</li>  <li>Map view</li>  <li>Apple Maps integration</li>  <li>Statistics</li>  <li>Achievements</li>  <li>Sync between iPhone and iPad</li>
 </ul>
 
-        </div>
-
-    </section>
+</section>
 
 
-    <section>
 
-        <h2>Documents</h2>
+<section>
 
-        <div class="card">
+<h2>📱Available for</h2>
 
-            <ul>
+<ul>
 
-                <li>
-                    <a href="privacy.en.html">
-                        Privacy Policy
-                    </a>
-                </li>
+<li>iPhone</li>
 
-                <li>
-                    <a href="terms.en.html">
-                        Terms of Service
-                    </a>
-                </li>
+<li>iPad</li>
 
-            </ul>
+</ul>
 
-        </div>
-
-    </section>
+</section>
 
 
-    <section class="download">
 
-        <h2>Download</h2>
+<section class="links">
 
-        <p>
-            The app will be available on the App Store.
-        </p>
+<h2>📄 Dokumentasjon</h2>
 
-        <a
-            class="appstore"
-            href="#"
-        >
-             Download on the App Store
-        </a>
+<ul>
 
-    </section>
+<li>
+🇳🇴
+<a href="Privacy.no.html">
+Personvernerklæring
+</a>
+</li>
+
+<li>
+🇳🇴
+<a href="Terms.no.html">
+Bruksvilkår
+</a>
+</li>
+
+<li>
+🇬🇧
+<a href="Privacy.en.html">
+Privacy Policy
+</a>
+</li>
+
+<li>
+🇬🇧
+<a href="Terms.en.html">
+Terms of Service
+</a>
+</li>
+
+</ul>
+
+</section>
+
+
+
+<div class="download">
+
+<h2>Last ned</h2>
+
+<p>
+Appen blir tilgjengelig på App Store.
+</p>
+
+<a href="#" class="store">
+
+ Download on the App Store
+
+</a>
+
+</div>
 
 </main>
 
 
+
 <footer>
-    © 2026 BucketList
+
+© 2026 BucketList
+
 </footer>
 
 </body>
-
 </html>
